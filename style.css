@@ -1,0 +1,48 @@
+/* Custom styles for smooth scrolling and font */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #1a202c; /* Dark background */
+    color: #e2e8f0; /* Light text color */
+}
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #f7fafc; /* white */
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #63b3ed; /* blue-400 */
+    border-radius: 9999px; /* rounded-full */
+}
+.skill-bar-container {
+    background-color: #4a5568; /* gray-700 */
+    border-radius: 9999px;
+    height: 0.75rem; /* h-3 */
+    overflow: hidden;
+}
+.skill-bar {
+    background-color: #63b3ed; /* blue-400 */
+    height: 100%;
+    border-radius: 9999px;
+}
+.card {
+    background-color: #2d3748; /* gray-800 */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 1.5rem; /* p-6 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+}
+.nav-link:hover {
+    color: #63b3ed; /* blue-400 */
+}

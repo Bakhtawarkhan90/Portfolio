@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakhtawar Khan - DevOps Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-90 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white nav-link">BAKHTAWAR KHAN</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Skills</a>
+                <a href="#devops-tools" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">DevOps Tools</a>
+                <a href="#experience" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Projects</a>
+                <a href="#education" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Education</a>
+                <a href="#certificates" class="text-gray-300 hover:text-blue-400 transition duration-300 nav-link">Certificates</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="#home" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Skills</a>
+            <a href="#devops-tools" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">DevOps Tools</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Experience</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Projects</a>
+            <a href="#education" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Education</a>
+            <a href="#certificates" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 nav-link">Certificates</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <!-- Canvas for background animation -->
+        <canvas id="backgroundCanvas" class="absolute inset-0 w-full h-full z-0"></canvas>
+        <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
+        <div class="z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">BAKHTAWAR KHAN</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8">DevOps Engineer</p>
+
+            <!-- DevOps Tools GIFs under the name -->
+            <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/docker.gif" alt="Docker" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/k8s.gif" alt="Kubernetes" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/DARK-art108/ItsRitesh/master/assets/ll.png" alt="Jenkins" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" alt="AWS" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/Potential17/Potential17/master/user%20(2).gif" alt="Git/GitHub" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" alt="Ansible" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/prometheus.gif" alt="Prometheus" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/grafana.gif" alt="Grafana" class="h-20 w-auto rounded-md shadow-lg">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/terraform.gif" alt="Terraform" class="h-20 w-auto rounded-md shadow-lg">
+            </div>
+
+            <div class="space-x-4">
+                <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">About Me</a>
+                <a href="#projects" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">My Projects</a>
+            </div>
+            <div class="mt-10 flex justify-center space-x-6 text-3xl">
+                <a href="mailto:bakhtawarkhan1367@gmail.com" class="text-gray-300 hover:text-blue-400 transition duration-300"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/bakhtawar-khan-" target="_blank" class="text-gray-300 hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Bakhtawarkhan90" target="_blank" class="text-gray-300 hover:text-blue-400 transition duration-300"><i class="fab fa-github"></i></a>
+                <a href="tel:+919027815941" class="text-gray-300 hover:text-blue-400 transition duration-300"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3 flex justify-center">
+                <img src="ME.JPG" alt="Bakhtawar Khan" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-blue-400 shadow-xl">
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="section-title">About Me</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    Results-driven DevOps Engineer with extensive experience in deploying and managing scalable applications using AWS, Docker, Kubernetes, and Jenkins. Skilled in automating processes, enhancing system performance, and implementing robust CI/CD pipelines. Seeking to leverage my expertise and passion for DevOps to drive innovation and contribute to the success of a forward-thinking organization.
+                </p>
+                <div class="text-gray-400 text-sm">
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> Delhi, India</p>
+                    <p><i class="fas fa-envelope mr-2 text-blue-400"></i> bakhtawarkhan1367@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Skill Category: Technologies -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Technologies</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Linux</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[90%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Docker</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[95%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Kubernetes</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[80%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">AWS</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[90%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Nginx</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[75%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Terraform</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[70%]"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category: CI/CD & Monitoring -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">CI/CD & Monitoring</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Jenkins</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[90%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">CI/CD</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[95%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Prometheus</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[80%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Grafana</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[80%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Ansible</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[70%]"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category: Version Control & Scripting -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Version Control & Scripting</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">GitHub</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[95%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Git</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[90%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Bash</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[80%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">YAML</span>
+                                <span class="text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[75%]"></div></div>
+                        </li>
+                        <li>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-lg font-medium">Troubleshooting</span>
+                                <span class="text-sm text-gray-400">Advanced</span>
+                            </div>
+                            <div class="skill-bar-container"><div class="skill-bar w-[90%]"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DevOps Tools Section -->
+    <section id="devops-tools" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">DevOps Tools in Action</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Tool 1: Docker -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Docker</h3>
+                    <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/docker.gif" alt="Docker GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Containerization platform for developing, shipping, and running applications.</p>
+                </div>
+                <!-- Tool 2: Kubernetes -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Kubernetes</h3>
+                    <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/k8s.gif" alt="Kubernetes GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Orchestration system for automating deployment, scaling, and management of containerized applications.</p>
+                </div>
+                <!-- Tool 3: Jenkins -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Jenkins</h3>
+                    <img src="https://raw.githubusercontent.com/DARK-art108/ItsRitesh/master/assets/ll.png" alt="Jenkins GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Leading open-source automation server for building, deploying, and automating any project.</p>
+                </div>
+                <!-- Tool 4: AWS -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">AWS</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" alt="AWS Logo" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Comprehensive cloud computing platform offering a wide range of services.</p>
+                </div>
+                <!-- Tool 5: Git/GitHub -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Git/GitHub</h3>
+                    <img src="https://raw.githubusercontent.com/Potential17/Potential17/master/user%20(2).gif" alt="Git/GitHub GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Version control system and web-based hosting service for software development.</p>
+                </div>
+                <!-- Tool 6: Ansible -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Ansible</h3>
+                    <img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" alt="Ansible Logo" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Open-source software provisioning, configuration management, and application-deployment tool.</p>
+                </div>
+                <!-- Tool 7: Prometheus -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Prometheus</h3>
+                    <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/prometheus.gif" alt="Prometheus GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Open-source monitoring system with a dimensional data model and flexible query language.</p>
+                </div>
+                <!-- Tool 8: Grafana -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Grafana</h3>
+                    <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/grafana.gif" alt="Grafana GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-gray-300">Open-source platform for monitoring and observability, allowing you to visualize metrics.</p>
+                </div>
+                <!-- Tool 9: Terraform -->
+                <div class="card text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Terraform</h3>
+                    <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/terraform.gif" alt="Terraform GIF" class="h-12 w-auto rounded-md">
+                    <p class="text-300">Infrastructure as Code (IaC) tool for building, changing, and versioning infrastructure safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">Professional Experience</h2>
+            <div class="mt-10 space-y-8">
+                <div class="card flex flex-col md:flex-row items-start md:items-center transform hover:scale-105 transition duration-300">
+                    <div class="md:w-1/4 text-gray-400 mb-4 md:mb-0">
+                        <p class="font-semibold">10/2024 - 12/2024</p>
+                        <p>Delhi, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-semibold text-white mb-2"><i class="fas fa-briefcase mr-2 text-blue-400"></i>DevOps Intern</h3>
+                        <p class="text-blue-400 text-lg mb-4">DSEU IT & Automation</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Website Containerization</li>
+                            <li>CI/CD Pipeline Implementation</li>
+                            <li>AWS Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">My Projects</h2>
+            <div class="mt-10 space-y-12">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-white mb-3">1. DSEU COLLEGE WEBSITE</h3>
+                    <p class="text-gray-300 mb-4">
+                        Deployed a scalable 3-tier MERN (MongoDB, Express.js, React, Node.js) stack application, managing over 1,500 concurrent users, and utilized containerization & orchestration tools and AWS services for efficient deployment and scaling.
+                    </p>
+                    <a href="https://dseu.ac.in/" target="_blank" class="text-blue-400 hover:underline text-lg font-medium">
+                        <i class="fas fa-external-link-alt mr-2"></i>View Project
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-white mb-3">2. ORA CAFE WEBSITE</h3>
+                    <p class="text-gray-300 mb-4">
+                        Deployed a two-tier Flask and MySQL application on a scalable AWS infrastructure using VPC, ALB, and Auto Scaling, designed to handle 1,000 concurrent users while following DevOps best practices.
+                    </p>
+                    <a href="https://github.com/Bakhtawarkhan90/Barista_cafe.git" target="_blank" class="text-blue-400 hover:underline text-lg font-medium">
+                        <i class="fab fa-github mr-2"></i>View Project on GitHub
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-white mb-3">3. Cloud-Scaled MERN App</h3>
+                    <p class="text-gray-300 mb-4">
+                        Deployed a 3-tier MERN stack application on AWS, achieving 99.9% uptime through the use of auto-scaling groups and an Elastic Load Balancer (ELB). This deployment strategy reduced downtime by 30% and improved load management, ensuring high availability and scalability.
+                    </p>
+                    <a href="https://github.com/Bakhtawarkhan90/wanderlust.git" target="_blank" class="text-blue-400 hover:underline text-lg font-medium">
+                        <i class="fab fa-github mr-2"></i>View Project on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">Education</h2>
+            <div class="mt-10 space-y-8">
+                <div class="card flex flex-col md:flex-row items-start md:items-center transform hover:scale-105 transition duration-300">
+                    <div class="md:w-1/4 text-gray-400 mb-4 md:mb-0">
+                        <p class="font-semibold">2021-2024</p>
+                        <p>MEERUT, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-semibold text-white mb-2"><i class="fas fa-graduation-cap mr-2 text-blue-400"></i>Bachelor of Computer Application</h3>
+                        <p class="text-blue-400 text-lg mb-2">I.L.M.T College Mall Road</p>
+                        <p class="text-gray-300">Percentage: 74%</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col md:flex-row items-start md:items-center transform hover:scale-105 transition duration-300">
+                    <div class="md:w-1/4 text-gray-400 mb-4 md:mb-0">
+                        <p class="font-semibold">2020-2021</p>
+                        <p>MEERUT, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-semibold text-white mb-2"><i class="fas fa-graduation-cap mr-2 text-blue-400"></i>12th Grade</h3>
+                        <p class="text-blue-400 text-lg mb-2">Kendriya Vidyalaya Dogra Lines</p>
+                        <p class="text-gray-300">Percentage: 70%</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col md:flex-row items-start md:items-center transform hover:scale-105 transition duration-300">
+                    <div class="md:w-1/4 text-gray-400 mb-4 md:mb-0">
+                        <p class="font-semibold">2018-2019</p>
+                        <p>MEERUT, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-semibold text-white mb-2"><i class="fas fa-graduation-cap mr-2 text-blue-400"></i>10th Grade</h3>
+                        <p class="text-blue-400 text-lg mb-2">Kendriya Vidyalaya Dogra Lines</p>
+                        <p class="text-gray-300">Percentage: 65%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center">Certificates</h2>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Linux</h3>
+                    <p class="text-gray-300">Completed at TWS</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Docker</h3>
+                    <p class="text-gray-300">Completed at Udemy</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Jenkins 17</h3>
+                    <p class="text-gray-300">Completed at Udemy</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-2xl font-semibold text-white mb-2">DevOps Beginners to Advanced</h3>
+                    <p class="text-gray-300">Completed at TWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-8 px-4 text-center text-gray-400">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Bakhtawar Khan. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                <a href="mailto:bakhtawarkhan1367@gmail.com" class="hover:text-blue-400 transition duration-300"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/bakhtawar-khan-" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Bakhtawarkhan90" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
