@@ -348,6 +348,38 @@
             transform: translateY(-2px);
         }
 
+        /* Resume Button Style */
+        .btn-resume {
+            background: transparent;
+            color: var(--red);
+            padding: 14px 36px;
+            border: 2px solid var(--red);
+            border-radius: 50px;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.15rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-resume:hover {
+            background: var(--red);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px var(--red-glow);
+        }
+        .btn-resume i {
+            font-size: 1rem;
+            transition: transform 0.3s;
+        }
+        .btn-resume:hover i {
+            transform: translateY(2px);
+        }
+
         .hero-socials {
             display: flex; justify-content: center; gap: 1.5rem;
             margin-top: 2.5rem;
@@ -1276,6 +1308,9 @@
             <div class="hero-btns">
                 <a href="#about" class="btn-primary magnetic">Explore More</a>
                 <a href="#projects" class="btn-outline magnetic">View Projects</a>
+                <a href="resume.pdf" download="Bakhtawar_Khan_Resume.pdf" class="btn-resume magnetic">
+                    <i class="fas fa-download"></i> Resume
+                </a>
             </div>
 
             <div class="hero-socials">
