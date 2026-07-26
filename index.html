@@ -478,17 +478,7 @@
             display: flex; justify-content: center;
         }
         .about-img-wrapper::before {
-            content: '';
-            position: absolute;
-            width: 280px; height: 280px;
-            border: 2px solid var(--red);
-            border-radius: 20px;
-            top: 15px; left: calc(50% - 125px);
-            z-index: 0;
-            transition: all 0.4s;
-        }
-        .about-img-wrapper:hover::before {
-            top: 10px; left: calc(50% - 130px);
+            display: none;
         }
         .about-img {
             width: 260px; height: 260px;
